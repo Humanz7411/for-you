@@ -32,7 +32,7 @@
 	.corner-tl{top:8px;left:8px;border-right:none;border-bottom:none}
 	.corner-br{bottom:8px;right:8px;border-left:none;border-top:none}
 	@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
-	.hearts,.sparkles{position:absolute;top:70px;left:0;right:0;z-index:4}
+	.s,.sparkles{position:absolute;top:70px;left:0;right:0;z-index:4}
 	.heart,.sparkle{position:absolute;bottom:0;pointer-events:none;animation:floatUp 5s linear infinite}
 	.heart:before,.heart:after{content:"";position:absolute;left:15px;top:0;width:15px;height:28px;background:var(--color-heart);border-radius:15px 15px 0 0;transform:rotate(-45deg);transform-origin:0 100%;box-shadow:0 0 15px var(--color-glow);}
 	.heart:after{left:0;transform:rotate(45deg);transform-origin:100% 100%}

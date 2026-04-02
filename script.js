@@ -94,8 +94,8 @@ audio = new Audio('' + linkmp3.src);
             greetingImage.classList.add('hide');
             setTimeout(() => {
               pindahHal(3);
-            }, 800); // Durasi animasi disappear
-          }, 300);
+            }, 1000); // Durasi animasi disappear
+          }, 2500);
 
           envelope.classList.remove('open');
           envelope.classList.add('close');

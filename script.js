@@ -241,3 +241,31 @@ audio = new Audio('' + linkmp3.src);
 	     }
       }, 50);
     }
+
+    /* ===== TAMBAHAN DARI GUA (SAFE MERGE) ===== */
+
+/* AUDIO BIAR MASUK HALUS */
+document.body.addEventListener("click", () => {
+  const audioEl = document.getElementById("linkmp3");
+  if (audioEl) {
+    audioEl.volume = 0.4;
+    audioEl.play().catch(() => {});
+  }
+}, { once: true });
+
+/* EFEK HATI JATUH (AESTHETIC) */
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "falling-heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (10 + Math.random() * 20) + "px";
+  heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}, 600);
+
